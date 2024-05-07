@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ideal_care_solution/static/css/main.e905f176.css",
-    "main.js": "/ideal_care_solution/static/js/main.6285a389.js",
+    "main.js": "/ideal_care_solution/static/js/main.170c1753.js",
     "static/media/idea_core2.jpg": "/ideal_care_solution/static/media/idea_core2.fafbdafdd52954e369cf.jpg",
     "static/media/idea_core4.jpg": "/ideal_care_solution/static/media/idea_core4.855a142cbf995c667a84.jpg",
     "static/media/ideal_core1.jpg": "/ideal_care_solution/static/media/ideal_core1.1558c2dd8fd5c63aecb0.jpg",
@@ -9,10 +9,10 @@
     "static/media/idea_core3.jpg": "/ideal_care_solution/static/media/idea_core3.fc724e0595597dbf7d1f.jpg",
     "index.html": "/ideal_care_solution/index.html",
     "main.e905f176.css.map": "/ideal_care_solution/static/css/main.e905f176.css.map",
-    "main.6285a389.js.map": "/ideal_care_solution/static/js/main.6285a389.js.map"
+    "main.170c1753.js.map": "/ideal_care_solution/static/js/main.170c1753.js.map"
   },
   "entrypoints": [
     "static/css/main.e905f176.css",
-    "static/js/main.6285a389.js"
+    "static/js/main.170c1753.js"
   ]
 }
