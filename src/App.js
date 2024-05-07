@@ -22,8 +22,8 @@ const App = () => {
     <Router>
       <ScrollToTop/>
       <Nav />
+      <Home/>
       <Routes>
-        <Route path="/" element={<Home/>}/>
         <Route path="/home"  element ={<Home/>} />
         <Route path="/about"  element={<MainAbout/>} />
         <Route path="/main_servies"  element={<MainService/>} />
