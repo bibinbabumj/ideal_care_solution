@@ -51,7 +51,7 @@ const [isOpen,setIsOpen]=useState(false)
           Home
         </Link>
 
-        <Link to="ideal_care_solution/about" className={active==="/about" ? "active":""}  onClick={() => onStatusChange("/about")}>
+        <Link to="/about" className={active==="/about" ? "active":""}  onClick={() => onStatusChange("/about")}>
         <IoIosInformationCircle className="nav_icon" />
         About
         </Link>
