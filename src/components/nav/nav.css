@@ -90,7 +90,8 @@
         right: 0;
         width: 100%;
         padding: 0.7rem 1.7rem;
-        background-color: rgba(0, 0, 0, .9);
+        /* background-color: rgba(0, 0, 0, .9); */
+        background-color: #f4976cfa;;
         box-shadow: 0 40px 60px rgba(0, 0, 0, .1) ;
         backdrop-filter: blur(15px);
         border-radius: 2rem; 

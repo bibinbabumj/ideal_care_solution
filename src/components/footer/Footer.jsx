@@ -19,15 +19,15 @@ const Footer = () => {
       </Link>
 
       <div className="permalinks">
-          <Link to="/home" onClick={scrollToTop}>Home</Link>
+          <Link to="ideal_care_solution/home" onClick={scrollToTop}>Home</Link>
 
-          <Link to="/about" onClick={scrollToTop}>About</Link>
+          <Link to="ideal_care_solution/about" onClick={scrollToTop}>About</Link>
 
-          <Link to="/main_servies" onClick={scrollToTop}>Our Services</Link>
+          <Link to="ideal_care_solution/main_servies" onClick={scrollToTop}>Our Services</Link>
 
-          <Link to="/main_work" onClick={scrollToTop}>Work For Us</Link>
+          <Link to="ideal_care_solution/main_work" onClick={scrollToTop}>Work For Us</Link>
 
-          <Link to="/contact" onClick={scrollToTop}>Contact</Link>     
+          <Link to="ideal_care_solution/contact" onClick={scrollToTop}>Contact</Link>     
       </div>
 
       <div className="social_liks">

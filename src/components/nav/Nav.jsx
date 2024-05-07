@@ -40,7 +40,7 @@ const [isOpen,setIsOpen]=useState(false)
 
   return (
     <nav className="nav-container">
-      <a href="ideal_care_solution/" className="ideal_logo">
+      <a href="/" className="ideal_logo">
         IDEAL CARE SOLUTION
       </a>
 {/* nav_menu  {navMob==="nav_menu"? "nav_menu":"nav_mobile" */}
