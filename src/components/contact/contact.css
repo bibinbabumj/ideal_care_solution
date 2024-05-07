@@ -1,0 +1,120 @@
+.contact__container{
+    display: grid;
+    grid-template-columns: 35% 60%;
+    gap: 2rem;
+    place-items: center;
+}
+.contact_items{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact_card{
+  text-align: center;  
+  padding: 1.2rem;
+  background: var(--color-primary);
+  border-radius: 1.1rem;
+  border: 1px solid transparent;
+  transition: var(--trasition);
+  clip-path: polygon(0% 180%,160% 0%, 0 0);
+}
+
+.contact_card:hover {
+    background: transparent;
+    border-color: var(--color-bg-varient);
+    cursor: default;
+  }
+
+  .contact_icon{
+    font-size: 1.5rem;
+    mask-origin: 0.5rem;
+    color:var(--color-bg-varient);
+  }
+
+  .contact_card a{
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 0.8rem;
+    color:var(--color-bg-varient);
+  }
+
+  .contact_card a:hover{
+    color:var(--color-primary);
+  }
+
+  .conatct_form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 100%;
+  }
+
+  .conatct_form input,
+  .conatct_form textarea{
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 1px solid var(--color-bg-varient);
+    resize: none;
+  
+  }
+
+  .submit_btn{
+    padding: 1rem 1.5rem;
+    font-size: .9rem;
+}
+
+
+  input::placeholder, textarea::placeholder {
+    color: var(--color-primary-varient)
+  }
+
+
+  
+  /* Large screens: till 1199px */
+@media (min-width: 1025px) and (max-width:1199px){
+  
+}
+
+
+/* Medium screens: Between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contact__container {
+    grid-template-columns: 35% 50%;
+    
+   
+  }
+}
+
+
+
+
+/* Small screens: Below 768px */
+@media (max-width: 767px) {
+  .contact__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .contact_items{
+    width: 80%;
+  }
+  .conatct_form{
+    width: 80%;
+  }
+
+  .contact_icon{
+    font-size: 1.2rem;
+    mask-origin: 0.5rem;
+    color:var(--color-bg-varient);
+  }
+  .conatct_form{
+    gap: 1rem;
+  }
+
+  .conatct_form input,
+  .conatct_form textarea{
+    padding: 1rem;
+  }
+}

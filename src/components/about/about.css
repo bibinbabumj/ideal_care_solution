@@ -1,0 +1,61 @@
+.about_container {
+  display: grid;
+  grid-template-columns: 35% 60%;
+  gap: 5%;
+  place-items: center;
+}
+.main_ab_content{
+    text-align: justify;
+}
+
+.main_ab_img_container{
+    aspect-ratio: 1/1;
+    display: grid;
+    place-items: center;
+    border-radius: 2rem;
+    border: 1px solid var(--color-primary);
+}
+.main_ab_img{
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    padding: 1rem;
+    clip-path: polygon(0% 200%,150% 0%, 0 0);
+    border-radius: 2rem;
+
+}
+/*  what is ideal care */
+
+.what_container{
+  display: grid;
+  grid-template-columns: 60% 35%;
+  gap: 5%;
+  place-items: center;
+}
+
+
+
+
+/* Medium screens: Between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about_container,.what_container {
+    grid-template-columns: 1fr
+  }
+
+  .main_ab_img_container{
+   width: 50%;
+   margin-bottom: 2rem;
+}
+}
+
+
+/* Small screens: Below 768px */
+@media (max-width: 767px) {
+  .about_container,.what_container {
+    grid-template-columns: 1fr
+  }
+
+  .main_ab_img_container{
+   width: 50%;
+   margin-bottom: 2rem;
+}
+}

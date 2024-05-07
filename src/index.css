@@ -1,13 +1,167 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  box-shadow: none;
+  list-style: none;
+}
+:root{
+  /* --color-bg: #E98074;
+  --color-bg-varient: #E85A4F;
+  --color-primary: #f3d054;
+  --color-primary-varient: #e9ae5b;
+  --color-white: #ffffff;
+  --color-black:#0b0a0a;
+  --color-light: rgba(255, 255, 255, 0.6); */
+
+/* conatiner width for each screen size */
+  --trasition: all 400ms ease;
+  --container-default-width:90%;
+  --container-width-lg:75%;
+  --container-width-md:80%;
+  --container-width-sm:90%;
+
+
+
+   --color-bg:#FBE8A6;
+  --color-bg-varient: #F4976C;
+  --color-primary: #303C6C;
+  --color-primary-varient: #B4DFE5;
+  --color-white: #ffffff;
+  --color-black:#0b0a0a;
+  --color-light: #D2FDFF;
+
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html{
+  scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar{
+display: none;
+}
+
+body{
+  font-family:"Poppins", sans-serif; 
+  background-color: var(--color-black);
+  line-height: 1.7;
+  /* background: linear-gradient(rgba(233, 128, 116,0.6), rgba(233, 128, 116,0.6)); */
+  /* background: linear-gradient(rgba(234, 231, 220,0.6), rgba(234, 231, 220,0.6)),
+  url(../src/assets/bg.jpg); */
+}
+
+.container{
+  /* width: var(--container-default-width); */
+  margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: 500;
+  color: var(--color-primary-varient);
+}
+
+h1{
+  font-size: 2rem;
+}
+
+
+span{
+  color: var(--color-bg-varient);
+}
+
+section {
+  margin-top: 5rem;
+}
+
+section > h2,
+section > h5 {
+    text-align: center;
+    color: var(--color-light);
+}
+
+section >h2{
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+}
+
+.text-light{
+    color: var(--color-light);
+}
+
+a{
+    color: var(--color-primary);
+    transition: var(---trasition);
+}
+
+a:hover{
+    color: var(--color-white);
+}
+
+.btn{
+  width: max-content;
+    display: inline-block;
+    color: var(--color-primary);
+    padding: 0.75rem 1.2rem;
+    border-radius:0.4rem ;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(---trasition);
+}
+
+.btn:hover{
+  background-color: var(--color-bg-varient);
+    color: var(--color-bg);
+    border-color: transparent;
+}
+
+.btn-primary{
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}
+
+img{
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Large screens: Above 1024px */
+@media (min-width: 1200px) {
+  .container{
+    width:var(--container-default-width);
+    /* background-color: rebeccapurple; */
+  }
+}
+
+/* Large screens: till 1199px */
+@media (min-width: 1025px) and (max-width:1199px){
+  .container{
+    width:var(--container-width-lg);
+    /* background-color: red; */
+  }
+}
+
+
+/* Medium screens: Between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+    /* background-color: #F4976C; */
+  }
+}
+
+
+
+
+/* Small screens: Below 768px */
+@media (max-width: 767px) {
+  .container {
+    width: var(--container-width-sm);
+    /* background-color: #e5b4d9; */
+  }
+}
+
