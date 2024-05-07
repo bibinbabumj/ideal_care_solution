@@ -46,12 +46,12 @@ const [isOpen,setIsOpen]=useState(false)
 {/* nav_menu  {navMob==="nav_menu"? "nav_menu":"nav_mobile" */}
       {/* <div className={!isOpen?"mob_menu":""}>  */}
       <div className={!isOpen?"nav_menu nav_active":"nav_menu"}> 
-        <Link to="/home" className={active==="/home" ? "active":""}  onClick={() => onStatusChange("/home")}>
+        <Link to="ideal_care_solution/home" className={active==="/home" ? "active":""}  onClick={() => onStatusChange("/home")}>
         <FaHome className="nav_icon" />
           Home
         </Link>
 
-        <Link to="/about" className={active==="/about" ? "active":""}  onClick={() => onStatusChange("/about")}>
+        <Link to="ideal_care_solution/about" className={active==="/about" ? "active":""}  onClick={() => onStatusChange("/about")}>
         <IoIosInformationCircle className="nav_icon" />
         About
         </Link>
