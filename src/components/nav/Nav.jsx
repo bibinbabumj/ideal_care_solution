@@ -46,7 +46,7 @@ const [isOpen,setIsOpen]=useState(false)
 {/* nav_menu  {navMob==="nav_menu"? "nav_menu":"nav_mobile" */}
       {/* <div className={!isOpen?"mob_menu":""}>  */}
       <div className={!isOpen?"nav_menu nav_active":"nav_menu"}> 
-        <Link to="ideal_care_solution/home" className={active==="/home" ? "active":""}  onClick={() => onStatusChange("/home")}>
+        <Link to="/home" className={active==="/home" ? "active":""}  onClick={() => onStatusChange("/home")}>
         <FaHome className="nav_icon" />
           Home
         </Link>
